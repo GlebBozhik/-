@@ -8,22 +8,57 @@
         <script src="script.js"></script>
         <title>Document</title>
         <style>
+            .header-section {
+                background-color: #f3f3f3;
+                width: 100%;
+                text-align: center;
+                padding: 60px 0 40px 0;
+                border-bottom: 2px solid #000;
+            }
+
             .logo {
-                font-size: 3rem;
+                font-size: 3.5rem;
                 font-weight: 300;
                 letter-spacing: 2px;
-                margin-bottom: 15px;
+                margin: 0;
+                text-transform: uppercase;
+            }
+
+            .logo span {
                 font-family: 'Courier New', Courier, monospace;
-            }</style>
+                font-weight: bold;
+            }
+
+            .subtitle {
+                font-style: italic;
+                font-size: 1.2rem;
+                margin-top: 15px;
+                color: #333;
+            }
+            .cta-button {
+                margin-top: 25px;
+                padding: 12px 30px;
+                font-size: 1rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color: #fff;
+                background-color: #000;
+                border: 2px solid #000;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            .cta-button:hover {
+                background-color: transparent;
+                color: #000;
     </head>
     <body>
         <header>
-            <div class="logo">
-                <p>GROBOV√(-1)k</p>
-            </div>
-            <div class="rasdelitel"></div>
-            <div class="subtitle">
-                <p>Генератор 18-ых заданий ЕГЭ по проф. мату</p>
+            <div class="header-section">
+                <h1 class="logo">Grobov<span>&radic;(-1)</span>k</h1>
+                <div class="subtitle">Генератор 18-ых заданий ЕГЭ по проф. мату</div>
+                <button class="cta-button">BlaBlaBla</button>
             </div>
         </header>
         <main>
