@@ -8,27 +8,69 @@
         <script src="script.js"></script>
         <title>Document</title>
         <style>
+            .header-section {
+                display: flex;
+                background-color: #f3f3f3;
+                width: 100%;
+                text-align: center;
+                padding: 60px 0 40px 0;
+                border-bottom: 2px solid #000;
+                align-items: center;
+                flex-direction: column;
+            }
+
             .logo {
-                font-size: 3rem;
+                font-size: 3.5rem;
                 font-weight: 300;
                 letter-spacing: 2px;
-                margin-bottom: 15px;
+                margin: 0;
+                text-transform: uppercase;
+                border-bottom: 2px solid #000;
+                width: 30%;
+            }
+
+            .logo span {
                 font-family: 'Courier New', Courier, monospace;
-            }</style>
+                font-weight: bold;
+            }
+
+            .subtitle {
+                font-style: italic;
+                font-size: 1.2rem;
+                margin-top: 15px;
+                color: #333;
+            }
+            .cta-button {
+                margin-top: 25px;
+                padding: 12px 30px;
+                font-size: 1rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color: #fff;
+                background-color: #000;
+                border: 1px solid #000;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            .cta-button:hover {
+                background-color: transparent;
+                color: #000;
+            }
+    </style>
     </head>
     <body>
         <header>
-            <div class="logo">
-                <p>GROBOV√(-1)k</p>
-            </div>
-            <div class="rasdelitel"></div>
-            <div class="subtitle">
-                <p>Генератор 18-ых заданий ЕГЭ по проф. мату</p>
+            <div class="header-section">
+                <h1 class="logo">Grobov<span>&radic;(-1)</span>k</h1>
+                <div class="subtitle">Генератор 1 заданий ЕГЭ по проф. мату</div>
+                <button class="cta-button">BlaBlaBla</button>
             </div>
         </header>
         <main>
             <section class="grobiki">
-                <ul>
+                <ul class="grobi">
                     <li>
                         <a class="grob"><img src="grob_na_hellouin_nqhoahdcwvih 1.png"></a>
                     </li>
@@ -39,6 +81,53 @@
                         <a class="grob"><img src="grob_na_hellouin_nqhoahdcwvih 3.png"></a>
                     </li>
                 </ul>
+            </section>
+            <section class="task-page">
+                <h1 class="tasks-h">Список заданий</h1>
+                <div class="tasks">
+                    <div>
+                        <p class="difficulty">Лёгкие:</p>
+                        <ul class="task-list">
+                            <li>
+                                <a>Задание №1</a>
+                            </li>
+                            <li>
+                                <a>Задание №2</a>
+                            </li>
+                            <li>
+                                <a>Задание №3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="difficulty">Средние:</p>
+                        <ul class="task-list">
+                            <li>
+                                <a>Задание №1</a>
+                            </li>
+                            <li>
+                                <a>Задание №2</a>
+                            </li>
+                            <li>
+                                <a>Задание №3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="difficulty">Сложные:</p>
+                        <ul class="task-list">
+                            <li>
+                                <a>Задание №1</a>
+                            </li>
+                            <li>
+                                <a>Задание №2</a>
+                            </li>
+                            <li>
+                                <a>Задание №3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </section>
         </main>
     </body>
