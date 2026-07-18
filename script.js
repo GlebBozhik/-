@@ -1,11 +1,12 @@
-
 let button = document.querySelector(".butt");
 
 function change(){
     let hide1 = document.querySelector(".header-section");
     let hide2 = document.querySelector(".grobiki");
+    let hide3 = document.querySelector(".task-page")
     hide1.style.display = 'none';
     hide2.style.display = 'none';
+    hide3.style.display = 'none';
     let text = document.querySelector(".textList");
     text.style.display = "block";
     let antibutton = document.querySelector(".antibutt");
@@ -19,8 +20,10 @@ let antibutton = document.querySelector(".antibutt");
 function antichange(){
     let hide1 = document.querySelector(".header-section");
     let hide2 = document.querySelector(".grobiki");
+    let hide3 = document.querySelector(".task-page")
     hide1.style.display = 'block';
     hide2.style.display = 'block';
+    hide3.style.display = 'block';
     let text = document.querySelector(".textList");
     text.style.display = "none";
     let antibutton = document.querySelector(".antibutt");
